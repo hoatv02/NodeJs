@@ -170,7 +170,7 @@ const Home = ()=>{
                        </div>
                        <div class="form-control">
                         <p>ENQUIRY TYPE</p>
-                        <input type="text" id="name" placeholder="Advertising">
+                        <input type="text" id="name" placeholder="Advertising" >
                        </div>
                     </div>
                     <div class="message">

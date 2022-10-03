@@ -40,12 +40,13 @@
     box-shadow: 0 0 5px ;
 }
 .products .name{
-    margin:14px 0;
-    font-size:14.5px;
+    font-size:15px !important;
+    margin: 0 !important;
+    color:#000;
 }
 .products .price{
     color:#F54748;
-    margin:10px 0;
+    margin: 0 !important;
 }
 .products button{
     width: 100%;

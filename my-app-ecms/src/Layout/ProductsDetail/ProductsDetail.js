@@ -1,5 +1,9 @@
 import Style from '../ProductsDetail/ProductsDetail.css'
 import imgBanner from '../../Assets/img/image 26.png'
+import imgProduct from '../../Assets/img/image 26 (1).png'
+import imgProducts from '../../Assets/img/image 26 (2).png'
+import imgProductss from '../../Assets/img/image 26 (3).png'
+
 const ProductsDetail = () => {
     return `
         <div class="containers">
@@ -21,19 +25,19 @@ const ProductsDetail = () => {
                 <h3 class="detailTitle">Related Products</h3>
                 <div class="Listproducts">
                     <div class="products">
-                        <img src="img/image 26 (5).png" alt="">
+                        <img src="${imgProduct}" alt="">
                         <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
                         <p class="price">$30</p>
                         <button>Add To Cart</button>
                     </div>
                     <div class="products">
-                        <img src="img/image 26 (4).png" alt="">
+                        <img src="${imgProducts}" alt="">
                         <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
                         <p class="price">$30</p>
                         <button>Add To Cart</button>
                     </div>
                     <div class="products">
-                        <img src="img/image 26.png" alt="">
+                        <img src="${imgProductss}" alt="">
                         <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
                         <p class="price">$30</p>
                         <button>Add To Cart</button>
