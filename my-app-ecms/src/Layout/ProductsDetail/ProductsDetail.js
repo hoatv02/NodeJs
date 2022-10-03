@@ -1,35 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css
-    " />
-</head>
-<body>
-    <div class="containers">
-        <div class="header">
-            <div class="logo">
-                <h4>Fudo.</h4>
-            </div>
-            <div class="menu">
-                <ul class="listMenu">
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div class="menuSign">
-                <div class="cart"><i class="fal fa-shopping-cart"></i></div>
-                <div class="signIn">Sign In</div>
-                <div class="signUp">Sign Up</div>
-            </div>
-        </div>
-        <div class="body">
+import Style from '../ProductsDetail/ProductsDetail.css'
+import imgBanner from '../../Assets/img/image 26.png'
+const ProductsDetail = () => {
+    return `
+        <div class="containers">
+            <div class="body">
             <div class="infoProducts">
                 <div class="contentProducts">
                     <h2 class="titleProducts">Big and Juicy Wagyu Beef Cheeseburger</h2>
@@ -40,7 +14,7 @@
                     </div>
                 </div>
                 <div class="imgProducts">
-                    <img src="img/image 26.png" alt="">
+                    <img src="${imgBanner}" alt="">
                 </div>
             </div>
             <div class="productsDetail">
@@ -68,20 +42,7 @@
             </div>
         </div>
         <div class="line"></div>
-        <div class="footer">
-            <div class="footerName">
-                <h4>Fudo .</h4>
-            </div>
-            <div class="footermenu">
-                <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
-
     </div>
-</body>
-</html>
+    `
+}
+export default ProductsDetail;
