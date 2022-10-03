@@ -1,11 +1,18 @@
-import Navigo from "navigo"
-const router = new Navigo("/")
+import Navigo from 'navigo'
+import LayoutSite from './src/Layout/LayoutSite'
+import HomeProducts from './src/Layout/HomeProducts/HomeProducts'
+const $ = document.querySelector.bind(document)
+const router = new Navigo('/')
+const print = (content)=>{
+    const app = $('#app').innerHTML = content
+}
 router.on({
-    "/":()=>{
-        console.log('Home')
+    "/": ()=>{
+        print(LayoutSite(HomeProducts()))
     },
-    "/products":()=>{
-        console.log('Products')
+    "/error":()=>{
+        print('Error')
     }
 })
+
 router.resolve()
