@@ -58,7 +58,8 @@
 
 }
 .imgProducts img{
-    width: 100%;
+    width: 70%;
+    float:right;
     border-radius: 5px;
     box-shadow: 0 0 5px ;
 }

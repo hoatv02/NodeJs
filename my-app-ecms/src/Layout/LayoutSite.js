@@ -4,9 +4,7 @@ const LayoutSite =(child)=>{
     return `
         ${Header()}
         ${child}
-
         ${Footer()}
-
     `
 }
 export default LayoutSite;

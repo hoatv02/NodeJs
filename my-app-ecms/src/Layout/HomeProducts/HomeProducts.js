@@ -12,9 +12,35 @@ import Products22 from '../../Assets/img/image 22.png'
 import Products23 from '../../Assets/img/image 23.png'
 import Products24 from '../../Assets/img/image 24.png'
 import Products25 from '../../Assets/img/image 25.png'
+export  const ob = [
+    {
+        id: 1,
+        img: Products25,
+        name: 'Thịt trâu gác bếp',
+        price: 10,
+    },
+    {
+        id: 2,
+        img: Products24,
+        name: 'Khô gà lá chanh',
+        price: 20,
+    },
+    {
+        id: 3,
+        img: Products23,
+        name: 'Heo nướng chiên giòn',
+        price: 30,
+    },
+    {
+        id: 4,
+        img: Products22,
+        name: 'Bò khô',
+        price: 40,
+    },
 
+]
+const Home = () => {
 
-const Home = ()=>{
     return `<div class="containers">
     <div class="body">
             <div class="ads">
@@ -43,8 +69,6 @@ const Home = ()=>{
                         <img src="${Ads}"
                             alt="">
                     </div>
-
-
                 </div>
             </div>
             <div class="productsContent">
@@ -54,66 +78,23 @@ const Home = ()=>{
                         et dolore magna aliqut enim ad minim </p>
                 </div>
                 <div class="productList">
-                    <div class="products">
-                        <img src="${Products261}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
+                ${ob.map((item) => {
+                 return (
+                    `
+                        <div class="products">
+                       <a href="/products/#${item.id}" data-navigo class='click'> <img src="${item.img}" alt=""></a>
+                        <p>${item.name}</p>
                         <div class="">
                             <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
+                                <li><i class="fal fa-alarm-clock"></i><span>${item.price}</span></li>
+                                <li><i class="fas fa-utensils-alt"></i><span>Fish</span></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="products">
-                        <img src="${Products262}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
-                        <div class="">
-                            <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <img src="${Products263}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
-                        <div class="">
-                            <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <img src="${Products264}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
-                        <div class="">
-                            <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <img src="${Products265}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
-                        <div class="">
-                            <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <img src="${Products26}" alt="">
-                        <p>Big and Juicy Wagyu Beef Cheeseburger</p>
-                        <div class="">
-                            <ul class="list_Product">
-                                <li><i class="fal fa-alarm-clock"></i> <span>30 minutes</span></li>
-                                <li><i class="fas fa-utensils-alt"></i> <span>Fish</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                        `
+                 )
+    }).join('')
+        }
                     
                 </div>
             </div>

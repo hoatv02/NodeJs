@@ -1,6 +1,6 @@
 import Style from '../Header/Header.css'
-const Footer = ()=>{
-        return `
+const Footer = () => {
+    return  `
         <div class="containers">
         <div class="footer">
         <div class="footerName">

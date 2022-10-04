@@ -7,8 +7,8 @@ import productsImg4 from '../../Assets/img/image 26 (4).png'
 import productsImg5 from '../../Assets/img/image 26 (5).png'
 import productsImg6 from '../../Assets/img/image 26.png'
 
-const Category = ()=>{
-    return `
+const Category = () => {
+    return`
     <div class="containers">
     <div class="body">
     <div class="banner">
