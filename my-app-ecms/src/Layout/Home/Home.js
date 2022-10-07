@@ -1,4 +1,4 @@
-import Style from './HomeProducts.css'
+import Style from './Home.css'
 import Ads from '../../Assets/img/photo-satisfied-woman-holds-piece-pizza-feels-pleased-as-spends-free-time-with-friends-pizzeria-looks-happily-directly-wears-casual-outfit-isolated-yellow-wall-lunch-removebg 1.png'
 import Products261 from '../../Assets/img/image 26 (1).png'
 import Products262 from '../../Assets/img/image 26 (2).png'
@@ -18,24 +18,28 @@ export  const ob = [
         img: Products25,
         name: 'Thịt trâu gác bếp',
         price: 10,
+        category : 'Breakfast'
     },
     {
         id: 2,
         img: Products24,
         name: 'Khô gà lá chanh',
         price: 20,
+        category : 'Vegan'
     },
     {
         id: 3,
         img: Products23,
         name: 'Heo nướng chiên giòn',
         price: 30,
+        category : 'Meat'
     },
     {
         id: 4,
         img: Products22,
         name: 'Bò khô',
         price: 40,
+        category : 'Dessert'
     },
 
 ]
@@ -82,7 +86,7 @@ const Home = () => {
                  return (
                     `
                         <div class="products">
-                       <a href="/products/#${item.id}" data-navigo class='click'> <img src="${item.img}" alt=""></a>
+                       <a href="/products/${item.id}" data-navigo class='click'> <img src="${item.img}" alt=""></a>
                         <p>${item.name}</p>
                         <div class="">
                             <ul class="list_Product">
@@ -136,20 +140,20 @@ const Home = () => {
                     <h2>Contact Us</h2>
                 </div>
                 <div class="formContact">
-                    <div class="form">
-                       <div class="form-control">
+                    <div class="form-control form">
+                       <div class="form-controls">
                         <p>NAME</p>
                         <input type="text" id="name" placeholder="Enter your name...">
                        </div>
-                       <div class="form-control">
+                       <div class="form-controls">
                         <p>EMAIL ADDRESS</p>
                         <input type="text" id="name" placeholder="Your email address...">
                        </div>
-                       <div class="form-control">
+                       <div class="form-controls">
                         <p>SUBJECT</p>
                         <input type="text" id="name" placeholder="Enter subject...">
                        </div>
-                       <div class="form-control">
+                       <div class="form-controls">
                         <p>ENQUIRY TYPE</p>
                         <input type="text" id="name" placeholder="Advertising" >
                        </div>

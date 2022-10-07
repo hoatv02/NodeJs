@@ -118,7 +118,7 @@
 
 .text-blue {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 22px;
     color: #0e50d5 !important;
     text-align: center;
@@ -132,5 +132,6 @@
 
 .form-joinfree p {
     margin: 0 5px;
+    font-size: 12px;
     color: #fff;
 }

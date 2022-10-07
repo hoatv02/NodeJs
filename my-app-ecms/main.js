@@ -1,27 +1,30 @@
 import Navigo from 'navigo'
 import LayoutSite from './src/Layout/LayoutSite'
-import HomeProducts from './src/Layout/HomeProducts/HomeProducts'
-import HomeCategory from './src/Layout/Category/Category'
-import ProductsDetai from './src/Layout/ProductsDetail/ProductsDetail'
+import Home from './src/Layout/Home/Home'
+import Products from './src/Layout/Products/Products'
+import ProductsDetail from './src/Layout/ProductsDetail/ProductsDetail'
 import Login from './src/Layout/FormLoginRegister/Login/Login'
+import ManageProducts from './src/Layout/ManageProducts/ManageProducts'
 const $ = document.querySelector.bind(document)
-const router = new Navigo('/')
+const router = new Navigo('/',{linksSelector:"a"})
 const print = (content)=>{
     const app = $('#app').innerHTML = content
 }
 router.on({
     "/": ()=>{
-        print(LayoutSite(HomeProducts()))
-    },
-    "/category":()=>{
-        print(LayoutSite(HomeCategory()))
+        print(LayoutSite(Home()))
     }
     ,
     "/products":()=>{
-        print(LayoutSite(ProductsDetai()))
-        print(LayoutSite(ProductsDetai()))
+        print(LayoutSite(Products()))
     }
     ,
+    "/products/:id":(value)=>{
+        print(LayoutSite(ProductsDetail(value.data.id)))
+    }
+    ,"/manage":()=>{
+        print(LayoutSite(ManageProducts()))
+    },
     "/login":()=>{
         print(Login())
     },

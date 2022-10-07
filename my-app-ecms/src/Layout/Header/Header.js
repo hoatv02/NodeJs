@@ -1,4 +1,4 @@
-import Style from '../Header/Header.css'
+import Style from './Header.css'
 
 const Header = () => {
         return `
@@ -9,10 +9,10 @@ const Header = () => {
                 </div>
                 <div class="menu">
                 <ul class="listMenu">
-                        <li>Home</li>
-                        <li>Products</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <li ><a href="/">Home</a></li>
+                        <li ><a href="/products">Products</a></li>
+                        <li ><a href="/"></a></li>
+                        <li ><a href="/">Contact</a></li>
                 </ul>
                 </div>
                 <div class="menuSign">

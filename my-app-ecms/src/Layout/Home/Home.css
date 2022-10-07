@@ -181,6 +181,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     padding: 20px 0;
+    padding: 50px;
     color: rgb(111, 108, 108);
     font-size:12px;
 }

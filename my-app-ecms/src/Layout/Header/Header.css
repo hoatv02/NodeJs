@@ -33,11 +33,13 @@
     color:#F54748;
 }
 .menuSign{
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding:15px 6px;
     float: right;
     grid-gap: 10px;
+    height:30px;
+    margin-top: 15px;
     font-size: 12px;
 }
 .cart{
@@ -49,7 +51,9 @@
 }
 .signIn,.signUp{
     border: 1px solid #F54748;
-    padding: 5px;
+    padding: 2px;
+    height:25px;
+    margin-top: 10px;
     text-align: center;
     border-radius: 5px;width: 100%;
 }
