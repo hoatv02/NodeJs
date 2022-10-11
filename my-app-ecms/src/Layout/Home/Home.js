@@ -15,28 +15,28 @@ import Products25 from '../../Assets/img/image 25.png'
 export  const ob = [
     {
         id: 1,
-        img: Products25,
+        img: Products261,
         name: 'Thịt trâu gác bếp',
         price: 10,
         category : 'Breakfast'
     },
     {
         id: 2,
-        img: Products24,
+        img: Products262,
         name: 'Khô gà lá chanh',
         price: 20,
         category : 'Vegan'
     },
     {
         id: 3,
-        img: Products23,
+        img: Products263,
         name: 'Heo nướng chiên giòn',
         price: 30,
         category : 'Meat'
     },
     {
         id: 4,
-        img: Products22,
+        img: Products264,
         name: 'Bò khô',
         price: 40,
         category : 'Dessert'

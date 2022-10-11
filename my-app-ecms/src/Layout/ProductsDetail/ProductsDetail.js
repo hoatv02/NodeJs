@@ -11,7 +11,7 @@ import {ob} from '../Home/Home'
 // })
 
 const ProductsDetail = (id) => {
-    console.log(id)
+    window.scrollTo(0,0)
     const products = ob.find((item)=>{
         console.log(item)
       return item.id === Number(id)
@@ -36,24 +36,20 @@ const ProductsDetail = (id) => {
             <div class="productsDetail">
                 <h3 class="detailTitle">Related Products</h3>
                 <div class="Listproducts">
-                    <div class="products">
-                        <img src="${imgProduct}" alt="">
-                        <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
-                        <p class="price">$30</p>
+                ${ob.map((item) => {
+                    return (
+                        ` 
+                        <div class="products">
+                        <a href="/products/${item.id}" data-navigo><img src="${item.img}" alt=""></a>
+                        <p class="name">${item.name}</p>
+                        <p class="price">${item.price}</p>
                         <button>Add To Cart</button>
                     </div>
-                    <div class="products">
-                        <img src="${imgProducts}" alt="">
-                        <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
-                        <p class="price">$30</p>
-                        <button>Add To Cart</button>
-                    </div>
-                    <div class="products">
-                        <img src="${imgProductss}" alt="">
-                        <p class="name">Fresh and Healthy Mixed Mayonnaise Salad</p>
-                        <p class="price">$30</p>
-                        <button>Add To Cart</button>
-                    </div>
+                               `)
+                }).join('')
+                    }
+                   
+                    
                 </div>
             </div>
         </div>

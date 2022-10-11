@@ -5,7 +5,6 @@
 
 .form-banner {
     height: 100vh;
-    box-shadow: 50px 50px 50px 50px rgb(46, 39, 39);
 
 }
 
@@ -16,9 +15,7 @@
 
 .forms {
     height: 100vh;
-    background-color: #373333;
     padding: 38.5px;
-    box-shadow: 50px 50px 50px 50px rgb(46, 39, 39);
     font-family: 'Inter', sans-serif;
     display: inline-block;
 }
@@ -27,6 +24,7 @@
     border: 1px solid #37A9CD;
     border-radius: 8px;
     height: 35px;
+    width: 100%;
     padding-left: 17px;
     font-weight: 400;
     font-size: 14px !important;
@@ -42,13 +40,13 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 19px;
-    color: #f9fafc;
+    color: #000000;
 }
 
-.form-control {
+.form-controls {
     margin: 15px 0;
     width: 100%;
-
+    background: none;
 }
 
 .buttons {
@@ -68,7 +66,7 @@
     font-weight: 900;
     font-size: 20px;
     line-height: 39px;
-    color: rgb(244, 244, 246);
+    color: rgb(0, 0, 0);
     text-align: center !important;
     margin-top: 0;
 }
@@ -79,7 +77,7 @@
     line-height: 19px;
     padding: 10px 0;
     text-align: center;
-    color: #f4f6f8;
+    color: #000000;
 }
 
 .logoss {
@@ -95,7 +93,7 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 29px;
-    color: #f2eeee;
+    color: #000000;
     margin: 0 auto;
     text-align: center;
     display: inline-block;
@@ -133,5 +131,5 @@
 .form-joinfree p {
     margin: 0 5px;
     font-size: 12px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
