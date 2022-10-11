@@ -2,9 +2,9 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 const LayoutSite =(child)=>{
     return `
-        ${Header()}
+        ${Header.render()}
         ${child}
-        ${Footer()}
+        ${Footer.render()}
     `
 }
 export default LayoutSite;

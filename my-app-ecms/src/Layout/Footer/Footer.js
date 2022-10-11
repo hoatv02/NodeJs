@@ -1,6 +1,7 @@
-import Style from '../Header/Header.css'
-const Footer = () => {
-    return  `
+import Style from "../Header/Header.css";
+const Footer = {
+  render() {
+    return `
         <div class="containers">
         <div class="footer">
         <div class="footerName">
@@ -16,6 +17,7 @@ const Footer = () => {
         </div>
     </div>
         </div>
-        `
-}
+        `;
+  },
+};
 export default Footer;

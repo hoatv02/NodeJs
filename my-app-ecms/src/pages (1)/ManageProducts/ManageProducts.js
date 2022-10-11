@@ -1,8 +1,9 @@
-import Style from './ManageProducts.css'
-const ManageProducts = ()=>{
-    return `
+import "./ManageProducts.css";
+const ManageProducts = {
+  render() {
+    return /*html*/ `
     <div class="containerTable">
-    <table class="table table-hover" border='1'">
+    <table class="table table-hover" border='1'>
         <thead>
             <tr>
                 <th scope="col">STT</th>
@@ -29,6 +30,10 @@ const ManageProducts = ()=>{
         </tbody>
     </table>
 </div>
-    `
-}
+    `;
+  },
+  start(){
+    return this.render()
+  }
+};
 export default ManageProducts;
