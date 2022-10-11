@@ -1,36 +1,33 @@
-import Navigo from 'navigo'
-import LayoutSite from './src/Layout/LayoutSite'
-import Home from './src/Layout/Home/Home'
-import Products from './src/Layout/Products/Products'
-import ProductsDetail from './src/Layout/ProductsDetail/ProductsDetail'
-import Login from './src/Layout/FormLoginRegister/Login/Login'
-import ManageProducts from './src/Layout/ManageProducts/ManageProducts'
-const $ = document.querySelector.bind(document)
-const router = new Navigo('/',{linksSelector:"a"})
-const print = (content)=>{
-    const app = $('#app').innerHTML = content
-}
+import Navigo from "navigo";
+import Products from "./src/pages (1)/Products/Products";
+import Home from "./src/pages (1)/Home/Home";
+import ProductsDetail from "./src/pages (1)/ProductsDetail/ProductsDetail";
+import LayoutSite from "./src/Layout/LayoutSite";
+import ManageProducts from "./src/pages (1)/ManageProducts/ManageProducts";
+const $ = document.querySelector.bind(document);
+const router = new Navigo("/", { linksSelector: "a" });
+const print = (content) => {
+  const app = ($("#app").innerHTML = content);
+};
 router.on({
-    "/": ()=>{
-        print(LayoutSite(Home()))
-    }
-    ,
-    "/products":()=>{
-        print(LayoutSite(Products()))
-    }
-    ,
-    "/products/:id":(value)=>{
-        print(LayoutSite(ProductsDetail(value.data.id)))
-    }
-    ,"/manage":()=>{
-        print(LayoutSite(ManageProducts()))
-    },
-    "/login":()=>{
-        print(Login())
-    },
-    "/error":()=>{
-        print('Error')
-    }
-})
+  "/": () => {
+    print(LayoutSite(Home.start()));
+  },
+  "/products": () => {
+    print(LayoutSite(Products.start()));
+  },
+  "/products/:id": (value) => {
+    print(LayoutSite(ProductsDetail.start(value.data.id)));
+  },
+  "/manage": () => {
+    print(LayoutSite(ManageProducts.start()));
+  },
+  "/login": () => {
+    print(Login());
+  },
+  "/error": () => {
+    print("Error");
+  },
+});
 
-router.resolve()
+router.resolve();
